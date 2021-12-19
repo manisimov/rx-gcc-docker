@@ -1,7 +1,7 @@
 # rx-gcc-docker
 Docker with GCC toolchain for Renesas RX microcontrollers
 
-I use this Docker for playing with YRDKRX62N development board.
+I use this Docker for playing with [YRDKRX62N](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/rx-32-bit-performance-efficiency-mcus/yrdkrx62n-yrdkrx62n-demonstration-kit-rx62n) development board.
 
 Before building image download **JLink_Linux_V760a_x86_64.tgz** from [Segger](https://www.segger.com/downloads/jlink/)
 and put it to **segger** folder.
