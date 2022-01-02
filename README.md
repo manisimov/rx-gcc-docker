@@ -10,4 +10,4 @@ Then build the image:
 
         sudo docker build --tag rx_img .
         
-As an example of the container usage see my YRDKRX62N template project https://github.com/manisimov/rx-template
+As an example of the container usage see my YRDKRX62N [template project](https://github.com/manisimov/rx-template)
