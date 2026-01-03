@@ -54,7 +54,7 @@ RUN unzip gcc.zip
 
 
 WORKDIR /home/sources/cgdb
-RUN git clone git://github.com/cgdb/cgdb.git
+RUN git clone https://github.com/cgdb/cgdb.git
 RUN cd cgdb && git checkout v0.7.1
 
 
@@ -173,8 +173,8 @@ RUN chmod a+x -R /home/sources/gdb/configure
 RUN chmod a+x -R /home/sources/gdb/mkinstalldirs
 RUN chmod a+x -R /home/sources/gdb/gdb/observer.sh
 WORKDIR /home/build/gdb/gdb
-RUN wget -O gdb_patch1.patch https://gcc-renesas.com/wiki/patches/c_exp_128bit_.patch
-RUN wget -O gdb_patch2.patch https://gcc-renesas.com/wiki/patches/c_exp_128bit_.patch
+RUN wget -O gdb_patch1.patch https://llvm-gcc-renesas.com/wiki/patches/c_exp_128bit_.patch
+RUN wget -O gdb_patch2.patch https://llvm-gcc-renesas.com/wiki/patches/c_exp_128bit_.patch
 RUN patch -R gdb_patch1.patch
 RUN patch gdb_patch2.patch
 WORKDIR /home/build/gdb
